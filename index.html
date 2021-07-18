@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soccer - Web</title>
+
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!-- font awesome kit -->
+    <script src="https://kit.fontawesome.com/a23692d14a.js" crossorigin="anonymous"></script>
+
+    <!-- bootstrap style sheet -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <!-- bootstrap js -->
+    <script src="bootstrap.bundle.min.js" defer></script>
+
+
+    <!-- my styles -->
+    <style>
+        /* import google fonts (Poppins) */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Niconne&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif !important;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <!-- home section -->
+        <section id="homeCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active text-light" data-bs-interval="4000" style="background:#640D2F;">
+                    <div class="container row g-3 mx-auto" style="height:700px;">
+                        <div class="col-6 d-flex align-items-center">
+                            <img class="img-fluid" src="img/fifa-2022.png">
+                        </div>
+                        <div class="col-6 d-flex align-items-center">
+                            <div>
+                                <h1 class="fw-bold mb-5" style="font-size:64px;">FIFA<br>World Cup<br>2022</h1>
+                                <a href="https://www.fifa.com/tournaments/mens/worldcup/2018russia"
+                                    class="fs-5 text-decoration-none bg-danger text-light px-4 py-3"
+                                    target="_blank">Watch
+                                    Live
+                                    <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item text-light" data-bs-interval="4000" style="background:#0076B4;">
+                    <div class="container row g-3 mx-auto" style="height:700px;">
+                        <div class="col-6 d-flex align-items-center">
+                            <div>
+                                <h1 class="fw-bold mb-5" style="font-size:64px;">FIFA<br>World Cup<br>2018</h1>
+                                <a href="http://copaamerica.com"
+                                    class="fs-5 text-decoration-none bg-danger text-light px-4 py-3"
+                                    target="_blank">Watch
+                                    Live
+                                    <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-6 d-flex align-items-center justify-content-center">
+                            <img class="img-fluid" src="img/fifa-2018.png" style="height:60%;">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item text-light" data-bs-interval="4000" style="background:#2D25A0;">
+                    <div class="container row g-3 mx-auto" style="height:700px;">
+                        <div class="col-6 d-flex align-items-center">
+                            <div>
+                                <h1 class="fw-bold mb-5" style="font-size:64px;">Conmebol<br>Copa America<br>2021</h1>
+                                <a href="http://copaamerica.com"
+                                    class="fs-5 text-decoration-none bg-danger text-light px-4 py-3"
+                                    target="_blank">Watch
+                                    Live
+                                    <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-6 d-flex align-items-center">
+                            <img class="img-fluid" src="img/banner.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item text-dark" data-bs-interval="4000" style="background:#ffc107;">
+                    <div class="container row g-3 mx-auto" style="height:700px;">
+                        <div class="col-6 d-flex align-items-center">
+                            <img class="img-fluid" src="img/copa-2019.png" style="height:70%;">
+                        </div>
+                        <div class="col-6 d-flex align-items-center justify-content-end text-end">
+                            <div>
+                                <h1 class="fw-bold mb-5" style="font-size:64px;">Conmebol<br>Copa America<br>2019</h1>
+                                <a href="http://copaamerica.com"
+                                    class="fs-5 text-decoration-none bg-danger text-light px-4 py-3"
+                                    target="_blank">Watch
+                                    Live
+                                    <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev w-auto px-3" type="button" data-bs-target="#homeCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next w-auto px-3" type="button" data-bs-target="#homeCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+
+        <!-- players section -->
+        <section class="players">
+            <div class="container d-flex justify-content-evenly flex-wrap pt-5">
+                <div class="card m-1 mb-4 shadow-lg" style="width:330px;">
+                    <img class="img-fluid" src="img/players/player-1.png">
+                    <div class="card-body">
+                        <h2 class="card-title fs-3 fw-bold">Mohamed Salah</h2>
+                        <p class="card-text fs-6 fw-normal">
+                            Mohamed Salah is an Egyptian professional footballer who plays as a forward for Premier
+                            League club Liverpool.
+                        </p>
+                    </div>
+                </div>
+                <div class="card m-1 mb-4 shadow-lg" style="width:330px;">
+                    <img class="img-fluid" src="img/players/player-2.png">
+                    <div class="card-body">
+                        <h2 class="card-title fs-3 fw-bold">Mesut Özil</h2>
+                        <p class="card-text fs-6 fw-normal">
+                            Mesut Özil is a German professional footballer who plays as an attacking midfielder for
+                            Süper Lig club Fenerbahçe.
+                        </p>
+                    </div>
+                </div>
+                <div class="card m-1 mb-4 shadow-lg" style="width:330px;">
+                    <img class="img-fluid" src="img/players/player-3.png">
+                    <div class="card-body">
+                        <h2 class="card-title fs-3 fw-bold">Mauro Icardi</h2>
+                        <p class="card-text fs-6 fw-normal">
+                            Mauro Emanuel Icardi is an Argentine professional footballer who plays as a striker for
+                            Ligue 1 club Paris Saint-Germain.
+                        </p>
+                    </div>
+                </div>
+                <div class="card m-1 mb-4 shadow-lg" style="width:330px;">
+                    <img class="img-fluid" src="img/players/player-4.png">
+                    <div class="card-body">
+                        <h2 class="card-title fs-3 fw-bold">Paulo Dybala</h2>
+                        <p class="card-text fs-6 fw-normal">
+                            Paulo Exequiel Dybala is an Argentine professional footballer who plays as a forward for
+                            Serie A club Juventus.
+                        </p>
+                    </div>
+                </div>
+                <div class="card m-1 mb-4 shadow-lg" style="width:330px;">
+                    <img class="img-fluid" src="img/players/player-5.png">
+                    <div class="card-body">
+                        <h2 class="card-title fs-3 fw-bold">Ángel Di María</h2>
+                        <p class="card-text fs-6 fw-normal">
+                            Ángel Fabián Di María is an Argentine professional footballer who plays for Ligue 1 club
+                            Paris Saint-Germain.
+                        </p>
+                    </div>
+                </div>
+                <div class="card m-1 mb-4 shadow-lg" style="width:330px;">
+                    <img class="img-fluid" src="img/players/player-6.png">
+                    <div class="card-body">
+                        <h2 class="card-title fs-3 fw-bold">Kylian Mbappé</h2>
+                        <p class="card-text fs-6 fw-normal">
+                            Kylian Mbappé Lottin is a French professional footballer who plays for Ligue 1
+                            club Paris Saint-Germain.
+                        </p>
+                    </div>
+                </div>
+                <div class="card m-1 mb-4 shadow-lg" style="width:330px;">
+                    <img class="img-fluid" src="img/players/player-7.png">
+                    <div class="card-body">
+                        <h2 class="card-title fs-3 fw-bold">Harry Kane</h2>
+                        <p class="card-text fs-6 fw-normal">
+                            Harry Edward Kane MBE is an English professional footballer who plays as a striker for
+                            Premier League club Tottenham Hotspur.
+                        </p>
+                    </div>
+                </div>
+                <div class="card m-1 mb-4 shadow-lg" style="width:330px;">
+                    <img class="img-fluid" src="img/players/player-8.png">
+                    <div class="card-body">
+                        <h2 class="card-title fs-3 fw-bold">Kevin De Bruyne</h2>
+                        <p class="card-text fs-6 fw-normal">
+                            Kevin De Bruyne is a Belgian professional footballer who plays as a midfielder for Premier
+                            League club Manchester City.
+                        </p>
+                    </div>
+                </div>
+                <div class="card m-1 mb-4 shadow-lg" style="width:330px;">
+                    <img class="img-fluid" src="img/players/player-9.png">
+                    <div class="card-body">
+                        <h2 class="card-title fs-3 fw-bold">Philippe Coutinho</h2>
+                        <p class="card-text fs-6 fw-normal">
+                            Philippe Coutinho Correia is a Brazilian professional footballer who plays as an attacking
+                            midfielder or winger for Spanish club Barcelona.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- photo album -->
+        <section class="album py-5 my-5">
+            <h1 class="album-heading text-center fw-bold my-5">Photo Album</h1>
+            <table class="w-100">
+                <tr>
+                    <td>
+                        <img class="w-100 h-100 p-1 py-md-0" src="img/album/image-1.jpg">
+                    </td>
+                    <td>
+                        <img class="w-100 h-100 p-1 py-md-0" src="img/album/image-2.jpg">
+                    </td>
+                    <td rowspan="2" class="d-none d-md-table-cell">
+                        <img class="w-100 h-100 p-1 py-md-0" src="img/album/image-3.jpg">
+                    </td>
+                    <td class="d-none d-md-table-cell">
+                        <img class="w-100 h-100 p-1 py-md-0" src="img/album/image-4.jpg">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <img class="w-100 h-100 p-1 py-md-0" src="img/album/image-5.jpg">
+                    </td>
+                    <td class="d-none d-md-table-cell">
+                        <img class="w-100 h-100 p-1 py-md-0" src="img/album/image-6.jpg">
+                    </td>
+                </tr>
+                <tr class="d-table-row d-md-none">
+                    <td colspan="2">
+                        <img class="w-100 h-100 p-1" src="img/album/image-3.jpg">
+                    </td>
+                </tr>
+                <tr class="d-table-row d-md-none">
+                    <td>
+                        <img class="w-100 h-100 p-1" src="img/album/image-4.jpg">
+                    </td>
+                    <td>
+                        <img class="w-100 h-100 p-1" src="img/album/image-6.jpg">
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+
+        <section class="py-5 my-5">
+            <div class="row">
+                <div class="col-12 col-lg-4 text-light d-flex flex-column justify-content-center px-5"
+                    style="height:400px; background:url('img/back-football.jpg'); background-size:cover; background-position:center;">
+                    <h2 class="fs-2 mb-4">Visit our <b>new shop</b></h2>
+                    <p class="mb-4">New online shop is available for our fans!</p>
+                    <div><a href="#" class="fs-5 text-decoration-none text-light bg-secondary px-3 py-2 rounded">Visit
+                            shop</a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 text-light d-flex flex-column justify-content-center px-5"
+                    style="height:400px; background:url('img/stadium.jpg'); background-size:cover; background-position:center;">
+                    <h2 class="fs-2 mb-4"><b>New player</b> in our club</h2>
+                    <p class="mb-4">Bryan Warner is now a part of our team! Check his profile!</p>
+                    <div><a href="#" class="fs-5 text-decoration-none text-light bg-secondary px-3 py-2 rounded">View
+                            profile</a></div>
+                </div>
+                <div class="col-12 col-lg-4 text-light d-flex flex-column justify-content-center px-5"
+                    style="height:400px; background:url('img/shoes.jpg'); background-size:cover; background-position:center;">
+                    <h2 class="fs-2 mb-4">New <b>League table</b> available</h2>
+                    <p class="mb-4">Visit the new page with our club standings!</p>
+                    <div><a href="#" class="fs-5 text-decoration-none text-light bg-secondary px-3 py-2 rounded">View
+                            table</a></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="d-flex flex-column align-items-center">
+        <div class="d-flex justify-content-center align-items-center">
+            <img src="img/Logo.png" style="width:250px;">
+            <h1 style="font-family:'Niconne',cursive; font-size:60px;">Football</h1>
+        </div>
+        <div class="social-icons d-flex my-3">
+            <span class="icon-wrapper fs-4 mx-3">
+                <i class="fab fa-instagram"></i>
+            </span>
+            <span class="icon-wrapper fs-4 mx-3">
+                <i class="fab fa-dribbble"></i>
+            </span>
+            <span class="icon-wrapper fs-4 mx-3">
+                <i class="fab fa-twitter"></i>
+            </span>
+            <span class="icon-wrapper fs-4 mx-3">
+                <i class="fab fa-youtube"></i>
+            </span>
+        </div>
+        <div class="fs-5 my-4">Copyright © 2022 Football</div>
+    </footer>
+</body>
+
+</html>
